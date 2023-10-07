@@ -7,8 +7,13 @@ using System;
 
 namespace NombreCache
 {
-    class Program
+    class Program {
+
+
+        static void saisie(string question)
     {
+            Console.WriteLine(question);
+    }
         static void Main(string[] args)
         {
 
@@ -20,7 +25,7 @@ namespace NombreCache
             {
                 try
                 {
-                    Console.Write("Entrez le nombre à chercher = ");
+                    saisie("Entrez le nombre à chercher = ");
                     valeur = int.Parse(Console.ReadLine());
                     correct = true;
                 }
